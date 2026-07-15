@@ -1,0 +1,185 @@
+function StudentInfo() {
+  return (
+    <div>
+      <h2>👤 Student Profile</h2>
+      <p>Name : Harshita Kanojia</p>
+      <p>Roll No : T011</p>
+      <p>Class : TYIT</p>
+      <p>Department : Information Technology</p>
+    </div>
+  );
+}
+export default StudentInfo
+function Attendance() {
+  return (
+    <div>
+      <h2>📚 Attendance</h2>
+      <p>Total Lectures : 60</p>
+      <p>Lectures Attended : 52</p>
+      <p>Attendance : 86.67%</p>
+    </div>
+  );
+}
+export default Attendance
+function ExamEligibility() {
+  return (
+    <div>
+      <h2>📝 Exam Eligibility</h2>
+      <p>Minimum Attendance Required : 75%</p>
+      <p>Current Attendance : 86.67%</p>
+      <p>Status : Eligible for Examination</p>
+    </div>
+  );
+}
+export default ExamEligibility
+function PlacementStatus() {
+  return (
+    <div>
+      <h2>💼 Placement Status</h2>
+      <p>CGPA : 8.90</p>
+      <p>Placement Status : Eligible</p>
+      <p>Dream Company : TCS</p>
+    </div>
+  );
+}
+export default PlacementStatus
+function SkillProgress() {
+  return (
+    <div>
+      <h2>🛠 Skill Progress</h2>
+      <p>HTML ✔</p>
+      <p>CSS ✔</p>
+      <p>JavaScript ✔</p>
+      <p>React ✔</p>
+      <p>Node.js : In Progress</p>
+    </div>
+  );
+}
+export default SkillProgress
+function Header() {
+  return (
+    <div>
+      <h1>M.V.L.U. College Student Dashboard</h1>
+      <hr />
+    </div>
+  );
+}
+export default Header
+function Footer() {
+  return (
+    <div>
+      <hr />
+      <h3>© 2026 M.V.L.U. College</h3>
+    </div>
+  );
+}
+export default Footer
+function AcademicPerformance() {
+  return (
+    <div>
+      <h2>📊 Academic Performance</h2>
+      <p>MERN : 90</p>
+      <p>Artificial Intelligence : 88</p>
+      <p>Java : 92</p>
+      <p>Average : 90</p>
+    </div>
+  );
+}
+export default AcademicPerformance
+import "./App.css";
+import Header from "./Components/Header";
+import StudentInfo from "./Components/StudentInfo";
+import Attendance from "./Components/Attendance";
+import ExamEligibility from "./Components/ExamEligibility";
+import AcademicPerformance from "./Components/AcademicPerformance";
+import PlacementStatus from "./Components/PlacementStatus";
+import SkillProgress from "./Components/SkillProgress";
+import Footer from "./Components/Footer";
+
+function App() {
+  return (
+    <div className="container">
+      <Header />
+      <hr />
+      <StudentInfo />
+      <hr />
+      <Attendance />
+      <hr />
+      <ExamEligibility />
+      <hr />
+      <AcademicPerformance />
+      <hr />
+      <PlacementStatus />
+      <hr />
+      <SkillProgress />
+      <hr />
+
+      <Footer />
+    </div>
+  );
+}
+export default App;
+body {
+  margin: 0;
+  padding: 20px;
+  background-color: #f5f3ff;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.container {
+  width: 70%;
+  margin: auto;
+  background-color: #ffffff;
+  border: 2px solid #d8c8ff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.container div {
+  text-align: center;
+  padding: 15px;
+  margin: 15px 0;
+  background-color: #faf7ff;
+  border-radius: 8px;
+}
+
+h1 {
+  color: purple;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  font-size: 48px;
+  text-align: center;
+  margin: 10px 0;
+}
+
+h2 {
+  color: purple;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+}
+
+h3 {
+  color: purple;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+}
+
+p {
+  font-size: 20px;
+  color: #333;
+  margin: 6px 0;
+}
+
+hr {
+  border: 1px solid #d8c8ff;
+  margin: 15px 0;
+}
+
+footer {
+  text-align: center;
+  color: #555;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+}
