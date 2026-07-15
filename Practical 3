@@ -1,0 +1,187 @@
+Practical 3A 
+Aim : Create a React application using Vite/CRA and display “Welcome to MERN Stack Development”.
+
+CODE 1 : 
+
+function App()
+{
+  return(
+    <div>
+     <h1> WELCOME TO MERN STACK</h1>
+    </div>
+  )
+}
+export default App
+
+OUTPUT : 
+
+
+Practical 3B
+Aim : Display dynamic data using JSX.
+CODE 1  : 
+function App(){
+  const stu = "Harshita";
+  const dept = "IT";
+  const fee = 5000;
+  return(
+    <div>
+      <h1>Student Details</h1>
+      <p>Name : {stu}</p>
+      <p>Department : {dept}</p>
+      <p>Fee : ${fee}</p>
+    </div>
+  );
+}
+export default App
+OUTPUT : 
+
+
+CODE 2 : 
+function App(){
+  const stu = "Harshita";
+  const dept = "IT";
+  const lecAttend = 50;
+  const totalLec = 60;
+  const attendance = (lecAttend/totalLec)*100;
+  return(
+    <div>
+      <h1>Student Details</h1>
+      <p>Name : {stu}</p>
+      <p>Department : {dept}</p>
+      <p>Total Lectures Attended : {lecAttend}</p>
+      <p>Total Number of Lectures : {totalLec}</p>
+      <p>Student Attendance : {attendance.toFixed(2)}%</p>
+      <hr></hr>
+      <h2> Eligiblity Status : {attendance >= 75?"Eligible for Exams" : "Not Eligible for Exams"} </h2>
+      <hr></hr>
+    </div>
+  );
+}
+export default App
+OUTPUT : 
+
+
+
+Practical 3C
+Aim :Declare variables and write a function to calculate the sum of two numbers and display the result.
+function App(){
+  const ai = 80;
+  const mern = 60;
+  function calculate(m1, m2){return m1+m2;}
+  return(
+    <div>
+      <h1>Student Marks </h1>
+      <p>AI Marks : {ai}</p>
+      <p>MERN Marks : {mern}</p>
+      <p>Total Marks : {calculate(ai, mern)}</p>
+    </div>
+  );
+}
+export default App
+OUTPUT : 
+
+
+
+
+
+
+
+Practical 3D
+Aim :Apply basic CSS styling to a React component
+
+CODE : 
+import "./App.css";
+function App() {
+  const ai = 80;
+  const mern = 60;
+  function calculate(m1, m2) {
+    return m1 + m2;
+  }
+  return (
+    <div className="box">
+      <h1>Student Marks</h1>
+
+      <p>AI Marks : {ai}</p>
+      <p>MERN Marks : {mern}</p>
+      <p>Total Marks : {calculate(ai, mern)}</p>
+    </div>
+  );
+}
+export default App;
+body {
+  background-color: #f5f3ff;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.box {
+  width: 400px;
+  margin: 100px auto;
+  padding: 20px;
+  text-align: center;
+  background-color: white;
+  border: 2px solid purple;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px gray;
+}
+
+h1 {
+  color: purple;
+  font-weight: bold;
+}
+
+p {
+  font-size: 20px;
+  color: black;
+}
+OUTPUT : 
+
+Practical 3E
+Aim : Create a simple functional component and render it in App.js.
+
+CODE : 
+import StudentMarks from "./components/StudentMarks";
+function App() {
+  return (
+    <div>
+      <h1>Functional Component Example</h1>
+      <StudentMarks />
+    </div>
+  );
+}
+export default App;
+function StudentMarks() {
+  const ai = 80;
+  const mern = 60;
+  const total = ai + mern;
+  return (
+    <div>
+      <h2>Student Marks</h2>
+      <p>AI Marks : {ai}</p>
+      <p>MERN Marks : {mern}</p>
+      <p>Total Marks : {total}</p>
+    </div>
+  );
+}
+export default StudentMarks;
+OUTPUT : 
+
+Practical 3F
+Aim : Create a React component that displays the current date and time dynamically using JavaScript.
+
+CODE : 
+function App(){
+  const currentDate = new Date();
+  return(
+    <div>
+      <h1>Current Date & Time </h1>
+      <p>DATE : {currentDate.toLocaleDateString()}</p>
+      <p>TIME : {currentDate.toLocaleTimeString()}</p>
+      <p>Harshita Kanojia</p>
+    </div>
+  );
+}
+export default App
+
+OUTPUT : 
+
+
