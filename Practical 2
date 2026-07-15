@@ -1,0 +1,147 @@
+Practical 2A 
+Aim : Create functions and call them with parameters.
+
+CODE 1 : 
+function calculateSalary(name, basicSalary){
+    let bonus = 5000;
+    let totalSalary = basicSalary + bonus;
+    console.log("Employee Name : ",name);
+    console.log("Basic Salary : ",basicSalary);
+    console.log("Bonus : ",bonus);
+    console.log("Total Salary : ",totalSalary);
+}
+calculateSalary("Harshita Kanojia",2000);
+
+OUTPUT : 
+
+
+CODE 2 : 
+function GenerateBill(custName,product,quantity,price){
+    let total = quantity*price;
+    let bill = total + (total*0.09);
+    console.log("Customer Name : ",custName);
+    console.log("Product : ",product);
+    console.log("Quantity : ",quantity);
+    console.log("Price per item : ",price);
+    console.log("Total Bill : ",bill);
+}
+GenerateBill("Harshita Kanojia","Laptop",2,500000);
+
+OUTPUT : 
+
+
+Practical 2B
+Aim : Work with arrays and objects in JavaScript.
+
+CODE : 
+let furit = ["Apple","Mango","Banana","Kiwi"];
+let student = {
+    name : "Harshita",
+    age : 20,
+    city : "Mumbai"
+};
+console.log("~~Student Object~~");
+console.log("Name : ",student.name);
+console.log("Age : ",student.age);
+console.log("City : ",student.city);
+console.log("~~~~~~~~~~~~~~~~~~~~");
+console.log("~~Fruits Array~~");
+console.log("Fruits : ",furit);
+console.log("Fruits : ",furit[1]);
+console.log("~~~~~~~~~~~~~~~~~~~~");
+
+OUTPUT : 
+
+
+Practical 2C
+Aim :Demonstrate use of arrow functions.
+let add = (a,b) => {
+    return a+b;
+};
+let sub = (a,b) => {
+    return a-b;
+};
+let mul = (a,b) => {
+    return a*b;
+};
+let div = (a,b) => {
+    return a/b;
+};
+let rem = (a,b) => {
+    return a%b;
+};
+console.log("Sum : ",add(10,20));
+console.log("Sub : ",sub(30,10));
+console.log("Mul : ",mul(5,5));
+console.log("Div : ",div(20,5));
+console.log("Rem : ",rem(50,10));
+console.log("Harshita Kanojia");
+
+OUTPUT : 
+
+
+Practical 2D
+Aim :Write a program using array methods (map, filter, reduce).
+
+CODE : 
+let numbers = [10,20,30,40,50];
+let doubled = numbers.map(num => num*2);
+let greater = numbers.filter(num => num>25);
+let total = numbers.reduce((sum,num)=>sum+num,0);
+console.log("Original Array : ",numbers);
+console.log("Doubled Array : ",doubled);
+console.log("Grater than 25 : ",greater);
+console.log("Total : ",total);
+console.log("Harshita Kanojia");
+
+OUTPUT : 
+
+
+Practical 2E
+Aim : Create a program that manipulates objects and displays output.
+
+CODE : 
+let student = {
+    name : "Harshita",
+    age : 20,
+    city : "Mumbai",
+    rollNo : 11,
+    marks : 90
+};
+console.log("Original Object : ", student);
+console.log("1. Accessing Property");
+console.log("Name : ",student.name);
+console.log("Marks : ",student.marks);
+console.log("2. Updating Property");
+console.log("Updated Marks : ",student.marks = 95);
+console.log("3. Adding New Property");
+console.log("Student Surname : ",student.surname = "Kanojia");
+console.log("4. Delete Property");
+console.log("Deleting Age : ",delete student.age);
+console.log("Manuplited Object : ", student);
+
+OUTPUT : 
+
+Practical 2E
+Aim : Implement a small JavaScript program combining functions, arrays,
+and objects.
+
+CODE : 
+function display(s)
+{
+    for(let stu of s)
+        {
+        console.log(`Name : ${stu.name}`);
+        console.log(`Roll No. : ${stu.rollNo}`);
+        console.log(`Marks : ${stu.marks}`);
+        console.log("~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+    }
+}
+let student = [{ name : "Harshita", rollNo : 11, marks : 90}, { name : "Sachin", rollNo : 44, marks : 89}, 
+    { name : "Sonu", rollNo : 1, marks : 95}];
+
+display(student);
+
+OUTPUT : 
+
+
